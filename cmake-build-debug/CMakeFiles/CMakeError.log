@@ -1,0 +1,64 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f Makefile cmTC_d664e/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d664e.dir\build.make CMakeFiles/cmTC_d664e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d664e.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\cmTC_d664e.dir\src.c.obj -c C:\Users\walte\CLionProjects\GLFW-CMake-starter\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_d664e.exe
+C:\Users\walte\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d664e.dir\link.txt --verbose=1
+C:\Users\walte\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\cmTC_d664e.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d664e.dir/objects.a @CMakeFiles\cmTC_d664e.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_d664e.dir/objects.a -Wl,--no-whole-archive -o cmTC_d664e.exe -Wl,--out-implib,libcmTC_d664e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d664e.dir\linklibs.rsp
+CMakeFiles\cmTC_d664e.dir/objects.a(src.c.obj):src.c:(.text+0x35): undefined reference to `pthread_create'
+CMakeFiles\cmTC_d664e.dir/objects.a(src.c.obj):src.c:(.text+0x41): undefined reference to `pthread_detach'
+CMakeFiles\cmTC_d664e.dir/objects.a(src.c.obj):src.c:(.text+0x4d): undefined reference to `pthread_cancel'
+CMakeFiles\cmTC_d664e.dir/objects.a(src.c.obj):src.c:(.text+0x5e): undefined reference to `pthread_join'
+CMakeFiles\cmTC_d664e.dir/objects.a(src.c.obj):src.c:(.text+0x68): undefined reference to `pthread_exit'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d664e.dir\build.make:100: cmTC_d664e.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_d664e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe -f Makefile cmTC_922ee/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_922ee.dir\build.make CMakeFiles/cmTC_922ee.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_922ee.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles\cmTC_922ee.dir\CheckFunctionExists.c.obj -c C:\Users\walte\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\share\cmake-3.20\Modules\CheckFunctionExists.c
+Linking C executable cmTC_922ee.exe
+C:\Users\walte\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_922ee.dir\link.txt --verbose=1
+C:\Users\walte\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\cmTC_922ee.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\ar.exe cr CMakeFiles\cmTC_922ee.dir/objects.a @CMakeFiles\cmTC_922ee.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\cmTC_922ee.dir/objects.a -Wl,--no-whole-archive -o cmTC_922ee.exe -Wl,--out-implib,libcmTC_922ee.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_922ee.dir\linklibs.rsp
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-W/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_922ee.dir\build.make:100: cmTC_922ee.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_922ee/fast] Error 2
+
+
+

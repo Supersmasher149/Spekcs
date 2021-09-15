@@ -1,0 +1,5 @@
+C:\Users\walte\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\walte\CLionProjects\GLFW-CMake-starter
+-- Using Win32 for window creation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug
