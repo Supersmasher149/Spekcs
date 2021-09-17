@@ -141,6 +141,30 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+glad/src/glad.obj: glad/src/glad.c.obj
+.PHONY : glad/src/glad.obj
+
+# target to build an object file
+glad/src/glad.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLFW-CMake-starter.dir\build.make CMakeFiles/GLFW-CMake-starter.dir/glad/src/glad.c.obj
+.PHONY : glad/src/glad.c.obj
+
+glad/src/glad.i: glad/src/glad.c.i
+.PHONY : glad/src/glad.i
+
+# target to preprocess a source file
+glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLFW-CMake-starter.dir\build.make CMakeFiles/GLFW-CMake-starter.dir/glad/src/glad.c.i
+.PHONY : glad/src/glad.c.i
+
+glad/src/glad.s: glad/src/glad.c.s
+.PHONY : glad/src/glad.s
+
+# target to generate assembly for a file
+glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLFW-CMake-starter.dir\build.make CMakeFiles/GLFW-CMake-starter.dir/glad/src/glad.c.s
+.PHONY : glad/src/glad.c.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -175,6 +199,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... GLFW-CMake-starter
 	@echo ... glfw
+	@echo ... glad/src/glad.obj
+	@echo ... glad/src/glad.i
+	@echo ... glad/src/glad.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

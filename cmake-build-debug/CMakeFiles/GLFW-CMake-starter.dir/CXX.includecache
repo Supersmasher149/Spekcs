@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../glad/include/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+../glad/include/glad/glad.h
+KHR/khrplatform.h
+-
+
 ../glfw/include/GLFW/glfw3.h
 stddef.h
 -
@@ -51,6 +63,10 @@ GL/glu.h
 -
 
 C:/Users/walte/CLionProjects/GLFW-CMake-starter/main.cpp
+iostream
+-
+glad/glad.h
+-
 GLFW/glfw3.h
 -
 

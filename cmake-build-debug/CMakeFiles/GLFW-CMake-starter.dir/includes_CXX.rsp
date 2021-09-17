@@ -1,1 +1,1 @@
--IC:/Users/walte/CLionProjects/GLFW-CMake-starter/glfw/include
+-IC:/Users/walte/CLionProjects/GLFW-CMake-starter/glad -IC:/Users/walte/CLionProjects/GLFW-CMake-starter/glad/include -IC:/Users/walte/CLionProjects/GLFW-CMake-starter/glfw/include

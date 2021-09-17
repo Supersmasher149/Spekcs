@@ -28,6 +28,7 @@
 					<Add option="-D_UNICODE"/>
 					<Add option="-DUNICODE"/>
 					<Add option="-DWINVER=0x0501"/>
+					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/glad"/>
 					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/glfw/include"/>
 					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/glfw/src"/>
 					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/glfw/src"/>
@@ -56,6 +57,7 @@
 					<Add option="-D_UNICODE"/>
 					<Add option="-DUNICODE"/>
 					<Add option="-DWINVER=0x0501"/>
+					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/glad"/>
 					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/glfw/include"/>
 					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/glfw/src"/>
 					<Add directory="C:/Users/walte/CLionProjects/GLFW-CMake-starter/cmake-build-debug/glfw/src"/>
